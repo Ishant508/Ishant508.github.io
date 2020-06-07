@@ -1,0 +1,139 @@
+
+  :root
+  {
+      --hue-neutral:200;
+      --hue-wrong:0;
+      --hue-correct:145;
+  }
+h1:hover
+{
+    color:yellow;
+    
+}
+  #quiz
+  {
+
+    margin-left:40%;
+    
+  }
+  #logo
+  {
+      margin-left: 42%;
+      margin-bottom: 100px;
+  }
+  
+body {
+    --hue:var(--hue-neutral);
+   // display:flex;
+    background-color:hsl(var(--hue), 100% ,20%);
+
+}
+.startbox
+{
+  padding:20px;
+  width:900px;
+  background-color:yellow;
+}
+body.correct {
+    --hue: var(--hue-correct);
+  }
+  
+  body.wrong {
+    --hue: var(--hue-wrong);
+  }
+  /*
+.start {
+    background-color:white;
+    color:green;
+    width:100px;
+    border-radius: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 45%;
+    font-size: 20px;
+    
+}*/
+#question-box
+{   box-align:center;
+    margin-top: 20px;
+    margin-left:30%;
+    width:620px;
+    background-color:white;
+    border-radius:5px;
+    padding:60px;
+    box-shadow: 0 0 10px 2px blue;
+    max-width:80%;
+    box-align:center;
+
+
+}
+.bt:hover, .start:hover,.next:hover
+{
+   border-color:pink;
+  color:red;
+}
+.controls
+{  padding:30px 60px;
+    margin-top:5%;
+    margin-left:50px;
+    margin-right:50px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.next,.start
+{  // margin-left:0px;    
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top=0;
+    
+}
+#answe
+{
+   display:grid;
+    grid-template-columns:repeat(2,auto);
+    gap:10px;
+    margin:20px 0;
+    height: 100px;
+}
+.bt
+{   --hue:var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius:5px;
+    color:white;
+    outline:none;
+    text-align: center;
+    font-size:16px;
+    padding-top:2px;
+    height: 40px;
+    
+
+}
+.bt.correct {
+   --hue: var(--hue-correct);
+  color: black;
+
+
+  }
+  
+.bt.wrong {
+    --hue: var(--hue-wrong);
+  }
+  .hide
+  {
+    display:none;
+  }
+  body.reset
+  {
+    --hue:var(--hue-neutral);
+  }
+  #imag
+  {
+    margin-left:33%;
+  }
+  #skip
+  {
+    margin-left:45%;
+  }
